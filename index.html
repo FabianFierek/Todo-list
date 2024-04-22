@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <aside class="aside">
+            <header class="aside_header">
+                <img src="src/imagines/profil.png" alt="">
+                <h3>Nikodem i Fabian</h3>
+            </header>
+            <div class="add_button_container">
+                <button>Add task</button>
+            </div>
+            <ul class="task_list">
+                <li class="today_button">Today</li>
+                <li class="upcoming_button">Upcoming</li>
+                <li class="completed_button">Completed</li>
+            </ul>
+        </aside>
+        <main class="main">
+            <header class="header">
+                <h1 class="title">Today<span class="actual_date">2024-04-22</span></h1> 
+            </header>
+            <main class="content">
+                <form class="add_task_form">
+                    <p class="input_container">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title">
+                    </p>
+                    <p class="input_container">
+                        <label for="time">Time</label>
+                        <input type="time" name="time" id="time">
+                    </p>
+                    <p class="input_container">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date">
+                    </p>
+                    <p class="input_container">
+                        <label for="priority">Priority</label>
+                        <input type="range" name="priority" id="priority" min="0" max="5">
+                    </p>
+                    <p class="input_container">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" cols="30" rows="6"></textarea>
+                    </p>
+                </form>
+            </main>                 
+        </main>
+    </div>
+    
+</body>
+</html>
